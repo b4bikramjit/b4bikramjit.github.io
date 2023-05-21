@@ -1,4 +1,13 @@
 /* CSS for Responsive Layout */
+/* CSS for Responsive Background */
+
+.background {
+    background: url('../img/bgg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 /* Mobile Devices */
 @media screen and (max-width: 767px) {
