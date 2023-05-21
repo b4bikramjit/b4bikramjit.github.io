@@ -1,197 +1,126 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-@media only screen and (max-width: 600px) {
-  /* Styles for screens up to 600px wide (typical mobile devices) */
-  .logo img {
-    width: 50%;
-  }
-  
-  .nav-list {
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .nav-list li {
-    padding: 20px;
-  }
-  
-  .rightNav {
-    width: 100%;
-    text-align: left;
-  }
-  
-  .firstHalf,
-  .secondHalf {
-    width: 100%;
-  }
-  
-  .secondHalf img {
-    width: 50%;
-  }
-  
-  .text-big {
-    font-size: 28px;
-    padding: 20px;
-  }
-  
-  .btn {
-    padding: 6px 15px;
-    margin: 5px 2px;
-    font-size: medium;
-  }
-  
-  .section,
-  .section-left {
-    flex-direction: column;
-    height: auto;
-  }
-  
-  .thumbnail img {
-    width: 200px;
-    margin-top: 10px;
-  }
-  
-  .contact {
-    height: auto;
-  }
-  
-  .fill {
-    max-width: 100%;
-  }
-  
-  .fill input {
-    margin: 10px 0;
-    font-size: 16px;
-  }
-}
+
 .logo {
-    ; 
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 
- .logo img{
+.logo img {
     width: 25%;
     border: 3px solid white;
     border-radius: 50px;
-
- }   
+}
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
-    top:0 ;
+    top: 0;
     cursor: pointer;
-
 }
 
-.nav-list{
-   width: 50%;
- 
-   display: flex;
-   align-items: center;
+.nav-list {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-list li {
-   list-style: none;
-   padding: 26px 30px;
+    list-style: none;
+    padding: 26px 30px;
 }
 
-
-.nav-list li a{
+.nav-list li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-family: 'Ubuntu', ssans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.nav-list li a:hover{
+.nav-list li a:hover {
     color: grey;
 }
 
-.rightNav{
-   
+.rightNav {
     width: 50%;
     text-align: right;
 }
 
-#search{
+#search {
     padding: 5px;
     font-size: 17px;
     border: 2px solid grey;
-    border-radius: 9px
+    border-radius: 9px;
 }
 
-.background{
+.background {
     background: rgba(0, 0, 0, 0.7) url('../img/bgg.jpeg');
     background-size: cover;
     background-blend-mode: darken;
 }
 
-.firstSection{
-   height: 100vh;
-
+.firstSection {
+    height: 100vh;
 }
 
-.box-main{
+.box-main {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 50%;
-    margin:auto;
+    margin: auto;
     height: 80%;
 }
 
-.firstHalf{
+.firstHalf {
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
-.secondHalf{
-  width: 30%;
+.secondHalf {
+    width: 30%;
 }
 
-.secondHalf img{
+.secondHalf img {
     width: 70%;
     border: 4px solid white;
     border-radius: 150px;
     display: block;
     margin: auto;
-
 }
 
-.text-big{
+.text-big {
     font-size: 41px;
     padding: 50px;
 }
 
-.text-small{
+.text-small {
     font-size: large;
 }
 
-.btn{
+.btn {
     font-size: large;
     padding: 8px 20px;
     margin: 7px 3px;
     border: 2px solid white;
     border-radius: 8px;
     background: none;
-    color:white;
+    color: white;
     cursor: pointer;
 }
 
-.buttons{
+.buttons {
     padding-top: 50px;
 }
 
@@ -200,21 +129,21 @@
     vertical-align: middle;
 }
 
-.btn-color{
+.btn-color {
     color: black;
     border: 2px solid grey;
 }
 
-.section{
+.section {
     height: 400px;
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: space-evenly;
-    max-width:  80%; ;
+    max-width: 80%;
     margin: auto;
 }
 
-.section-left{
+.section-left {
     flex-direction: row-reverse;
     height: 400px;
     display: flex;
@@ -224,16 +153,15 @@
     margin: auto;
 }
 
-
-.paras{
+.paras {
     padding: 0px 65px;
 }
 
-.secttionSubTag{
-    font-family: ;
+.sectionSubTag {
+    font-family:;
 }
 
-.thumbnail img{
+.thumbnail img {
     width: 250px;
     border: 2px solid black;
     border-radius: 25px;
@@ -241,29 +169,116 @@
 }
 
 .contact {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     height: 530px;
-    
 }
 
-.text-center{
+.text-center {
     text-align: center;
     padding: 30px;
     font-family:;
 }
 
-.fill{
+.fill {
     max-width: 500px;
     margin: 40px auto;
-    ;
 }
 
-.fill input{
+.fill input {
     margin: 15px 0;
     padding: 5px 3px;
-   width: 100%;
-   font-size: 19px;
-   border: 2px grey;
-   border-radius: 6px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px grey;
+    border-radius: 6px;
+}
 
+/* Media Queries */
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .rightNav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .box-main {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .firstHalf,
+    .secondHalf {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .text-big {
+        font-size: 32px;
+        padding: 20px;
+    }
+
+    .text-small {
+        font-size: medium;
+    }
+}
+
+/* Mobile Phones */
+@media only screen and (max-width: 480px) {
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        padding: 10px 15px;
+    }
+
+    .firstHalf {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .secondHalf img {
+        width: 50%;
+    }
+
+    .text-big {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .text-small {
+        font-size: small;
+    }
+
+    .section,
+    .section-left {
+        flex-direction: column;
+        height: auto;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .thumbnail img {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+    .fill {
+        max-width: 100%;
+    }
 }
